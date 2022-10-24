@@ -1,0 +1,29 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+body {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  width: 1170px;
+  margin: 0 auto;
+  height: 50px;
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+header, footer{
+  background: rgb(238, 237, 245);
+}
+.innerContent{
+  padding: 40px 0;
+}
