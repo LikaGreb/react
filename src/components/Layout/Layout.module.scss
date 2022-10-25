@@ -2,11 +2,16 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  &.dark{
+    background: green;
+  }
+  &.light{
+    background: yellow;
+  }
   .wrap {
     display: flex;
     gap: 20px;
     align-items: center;
     height: 60px;
-  }
-  
+  }  
 }
