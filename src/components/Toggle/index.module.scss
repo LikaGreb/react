@@ -16,7 +16,7 @@
     left: 0;
     z-index: 1;
     overflow: hidden;
-    background-color: #adb2f5;
+    background-color: rgb(235, 237, 119);
     border-radius: 50px;
     cursor: pointer;
     transition: all 1.4s;
@@ -78,6 +78,6 @@
   }
   input:checked ~ .wave {
     display: block;
-    background-color: #4433d9;
+    background-color: rgb(7, 51, 17);;
   }
 }

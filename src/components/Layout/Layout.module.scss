@@ -3,10 +3,11 @@
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   &.dark{
-    background: green;
+    background: rgb(7, 51, 17);
+    color: white;
   }
   &.light{
-    background: yellow;
+    background: rgb(235, 237, 119);
   }
   .wrap {
     display: flex;
