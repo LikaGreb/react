@@ -8,7 +8,7 @@ import styles from './PostItem.module.scss'
 function PostItem({ item }) {
   
   return (
-    
+   
     <li className={cn("card", styles.card)}>
       <Link to={`/post/${item.id}`}>{item.title}</Link> 
       

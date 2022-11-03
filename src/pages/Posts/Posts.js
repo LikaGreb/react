@@ -3,6 +3,7 @@ import axios from "axios";
 import Layout from "../../components/Layout/Layout";
 import styles from "./Posts.module.scss";
 import PostItem from "./components/PostItem/PostItem";
+import Mymodal from "../Posts/components/Modal/Modal";
 
 function Posts() {
   
@@ -19,6 +20,7 @@ function Posts() {
 
   return (
     <Layout>
+      <Mymodal />
       <div className="innerContent">
         <ul className={styles.posts}>
           {posts.map((item) => (

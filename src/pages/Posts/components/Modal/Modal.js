@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import styles from "./Modal.module.scss";
 
-    function Mymodal() {
+function Mymodal() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-        return (
-      <>
-    <Button variant="light" onClick={handleShow}>
+  return (
+    <>
+      <Button className={styles.btnAdd} variant="light" onClick={handleShow}>
         Add new post
       </Button>
 
@@ -33,7 +34,8 @@ import Modal from 'react-bootstrap/Modal';
 }
 export default Mymodal;
 
-{/*<Form onSubmit={submit}>
+{
+  /*<Form onSubmit={submit}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" onChange={(e)=>{console.log(e.target.value)}} />
@@ -51,4 +53,5 @@ export default Mymodal;
       <Button variant="primary" type="submit">
         Submit
       </Button>
-  </Form>*/}
+  </Form>*/
+}

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import axios from "axios";
 
 import styles from "./Home.module.scss";
-import PostItem from "./../Posts/components/PostItem/PostItem";
+import PostItem from "../../../Posts/components/PostItem/PostItem";
 
 function Home() {
   const [posts, setPosts] = useState([]);

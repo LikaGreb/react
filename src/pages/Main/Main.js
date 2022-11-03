@@ -1,8 +1,8 @@
 import content from "../../common/content";
 import Layout from "../../components/Layout/Layout";
-import Home from "./Home"
+import Home from "./components/Home/Home"
 
-import Mymodal from "./Modal";
+
 
 function Main() {
   const contentData = content.main;
@@ -10,7 +10,7 @@ function Main() {
     <Layout>
       <div className="innerContent">
         <h1>{contentData.title}</h1>
-        <Mymodal />
+        
         <Home />
       </div>
     </Layout>
