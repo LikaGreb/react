@@ -6,14 +6,14 @@ import PostItem from "./components/PostItem/PostItem";
 import Mymodal from "../Posts/components/Modal/Modal";
 
 function Posts() {
-  
+  //const URL = process.env.REACT_APP_URL;  
   const [posts, setPosts] = useState([]);
   useEffect(() => {
+
     async function getPosts() {
-      const response = await axios.get(
-        "https://jsonplaceholder.typicode.com/posts"
-      );
+      const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
       setPosts(response.data.slice(0, 20));
+      console.log(response);
     }
     getPosts();
   }, []);

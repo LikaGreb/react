@@ -11,6 +11,7 @@ import styles from "./Post.module.scss";
 
 function Post() {
   const id = useParams().id || ""; 
+  //const URL = process.env.REACT_APP_URL;
   const [postData, setPostData] = useState({});
   useEffect(() => {
     async function getPostData() {
