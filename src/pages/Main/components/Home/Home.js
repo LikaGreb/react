@@ -7,14 +7,15 @@ import PostItem from "../../../Posts/components/PostItem/PostItem";
 
 function Home() {
   const [posts, setPosts] = useState([]);
+  const URL = process.env.REACT_APP_URL; 
   useEffect(() => {
     async function getPosts() {
-      const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
+      const response = await axios.get(URL);
       setPosts(response.data);
     }
     getPosts();
       
-  }, []);
+  }, [URL]);
   
   return (
 

@@ -11,17 +11,17 @@ import styles from "./Post.module.scss";
 
 function Post() {
   const id = useParams().id || ""; 
-  //const URL = process.env.REACT_APP_URL;
+  const URL = process.env.REACT_APP_URL;
   const [postData, setPostData] = useState({});
   useEffect(() => {
     async function getPostData() {
       const response = await axios.get(
-        `https://jsonplaceholder.typicode.com/posts/${id}`
+        `${URL}/${id}`
       );
       setPostData(response.data);
     }
     getPostData();
-  }, [id]);
+  }, [id, URL]);
 
   
   return (
